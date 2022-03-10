@@ -32,6 +32,8 @@ public class Main extends SimpleApplication {
         geom.setMaterial(mat);
  
         rootNode.attachChild(geom);
+        
+        
  
     }
  
@@ -43,3 +45,5 @@ public class Main extends SimpleApplication {
 }
  
 https://github.com/Teczius/Teczius.git
+
+(color3)
