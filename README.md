@@ -1,3 +1,6 @@
+
+yellow.\n"; printGrade(4); fail(fb); }
+
 package my.game;
  
 import com.jme3.app.SimpleApplication;
