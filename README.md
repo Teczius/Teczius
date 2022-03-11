@@ -7,7 +7,5 @@
   <p>... </p>
   <img src="Unterverzeichnis/Fotos.png"/>
   
-  
-  
  </body>
  </html>
