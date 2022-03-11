@@ -1,6 +1,4 @@
-
-yellow.\n"; printGrade(4); fail(fb); }
-
+printGrade(4); fail(fb);
 package my.game;
  
 import com.jme3.app.SimpleApplication;
@@ -20,7 +18,7 @@ public class Main extends SimpleApplication {
         settings.setTitle("My Awesome Game");
         app.setSettings(settings);
  
-        app.start();
+        app.start();g
  
     }
  
@@ -43,12 +41,6 @@ public class Main extends SimpleApplication {
     @Override
     public void simpleUpdate(float tpf) {
         //TODO: add update code
-    }
- 
-}
- 
-https://github.com/Teczius/Teczius.git
-
 
 import static org.junit.Assert.fail;
 import org.junit.After;
@@ -105,77 +97,7 @@ public class TestHouseActivity3
     
     /**
      * Test House class from activity 3.
-     */
-    @Test
-    public void testHouseActivity3()
-    {
-        testPrevious();
-        testSilent();
-        printGrade(14);
-        
-    }
-    
-    /**
-     * Run all tests.
-     */
-    public void testSilent()
-    {
-        testStyle();
-        testChangeRoofColor1();
-        testChangeRoofColor2();
-        testChangeWallColor1();
-        testChangeWallColor2();
-        testChangeWindowColor1();
-        testChangeWindowColor2();
-        testMoveHorizontal1();
-        testMoveHorizontal2();
-        testMoveVertical1();
-        testMoveVertical2();
-        //testMakeInvisible();
-        //testMakeVisible();
-    }
-    
-    /**
-     * Make sure method moveHorizontal in the house class moves
-     * ALL pieces of the house.
-     */
-    public void testMoveHorizontal1()
-    {
-        String fb = "";
-        makeNewHouse();
-        int xWallOld = wall.getxPosition();
-        int xRoofOld = roof.getxPosition();
-        int xWindowOld = window.getxPosition();
-        house.moveHorizontal(20);
-        int xWallNew = wall.getxPosition();
-        int xRoofNew = roof.getxPosition();
-        int xWindowNew = window.getxPosition();
-        if (xWallNew != xWallOld + 20)
-        {
-            fb += "TestHouseActivity3 Failed.\n";
-            fb += "Running house.moveHorizontal(20) did not move " 
-                + "the wall object +20 pixels.\n";
-            printGrade(6);
-            fail(fb);
-        }
-        if (xRoofNew != xRoofOld + 20)
-        {
-            fb += "TestHouseActivity3 Failed.\n";
-            fb += "Running house.moveHorizontal(20) did not move " 
-                + "the roof object +20 pixels.\n";
-            printGrade(6);
-            fail(fb);
-        }
-        if (xWindowNew != xWindowOld + 20)
-        {
-            fb += "TestHouseActivity3 Failed.\n";
-            fb += "Running house.moveHorizontal(20) did not move " 
-                + "the window object +20 pixels.\n";
-            printGrade(6);
-            fail(fb);
-        }        
-    }
-    
+     */    
     /**
      * Make sure method moveHorizontal in the house class moves
      * ALL pieces of the house.
